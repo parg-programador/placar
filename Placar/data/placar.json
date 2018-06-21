@@ -1,0 +1,36 @@
+{
+  "ninguem_liga": [
+    {
+      "quem": "Pablo",
+      "pontos": 2,
+      "cor": "#2020FF"
+    },
+    {
+      "quem": "Anderson",
+      "pontos": 7,
+      "cor": "#FF4040"
+    },
+    {
+      "quem": "Gustavo",
+      "pontos": 8,
+      "cor": "#20FF20"
+    }
+  ],
+  "derrota": [
+    {
+      "quem": "Pablo",
+      "pontos": 3,
+      "cor": "#2020FF"
+    },
+    {
+      "quem": "Anderson",
+      "pontos": 2,
+      "cor": "#FF4040"
+    },
+    {
+      "quem": "Gustavo",
+      "pontos": 1,
+      "cor": "#20FF20"
+    }
+  ]
+}

@@ -1,29 +1,57 @@
 % rebase('layout.tpl', title='Home Page', year=year)
 
 <div class="jumbotron">
-    <h1>Bottle</h1>
-    <p class="lead">Bottle is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://bottlepy.org/docs/dev/index.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+    <h1>Placar</h1>
 </div>
 
 <div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            Bottle gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://bottlepy.org/docs/dev/index.html">Learn more &raquo;</a></p>
+    <div class="col-md-6">
+        <h2 class="text-center">Momento Ninguém Liga</h2>
+        <canvas id="ninguem_liga"></canvas>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>The Python Package Index is a repository of software for the Python programming language.</p>
-        <p><a class="btn btn-default" href="https://pypi.python.org/pypi">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Microsoft Azure</h2>
-        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
-        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
+    <div class="col-md-6">
+        <h2 class="text-center">Momento Derrota</h2>
+        <canvas id="derrota"></canvas>
     </div>
 </div>
+
+<script>
+	window.pageInit = function() {
+		var ctx_ninguem_liga = document.getElementById('ninguem_liga');
+		var ctx_derrota = document.getElementById('derrota');
+
+		var myNinguemLiga = new Chart(ctx_ninguem_liga, {
+		    type: 'pie',
+		    data: {
+				datasets: [{
+					data: [{{ !ninguem_liga_dados }}],
+					backgroundColor: [{{ !ninguem_liga_cores }}],
+				}],
+				labels: [{{ !ninguem_liga_nomes }}]
+			},
+		    options: {
+				responsive: true,
+				animation: {
+					animateRotate: true
+				}
+			}
+		});
+
+		var myDerrota = new Chart(ctx_derrota, {
+		    type: 'pie',
+		    data: {
+				datasets: [{
+					data: [{{ !derrota_dados }}],
+					backgroundColor: [{{ !derrota_cores }}],
+				}],
+				labels: [{{ !derrota_nomes }}]
+			},
+		    options: {
+				responsive: true,
+				animation: {
+					animateRotate: true
+				}
+			}
+		});
+	};
+</script>
