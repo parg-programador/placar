@@ -1,5 +1,5 @@
 # Placar
-App recreativo para controlar os momentos **Ninguém Liga** e **Derreta** no ambiente de trabalho.
+App recreativo para controlar os momentos **Ninguém Liga** e **Derrota** no ambiente de trabalho.
 
 ## Desenvolvimento e Deploy
 Este app foi desenvolvido no Visual Studio Community 2017 e publicado em um servidor IIS, para
