@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\placar.json" />
+    <Content Include="web.config" />
+    <None Include="Default Settings.pubxml" />
     <Content Include="requirements.txt" />
     <Content Include="static\content\bootstrap.css" />
     <Content Include="static\content\bootstrap.min.css" />
