@@ -42,9 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\placar.json" />
-    <Content Include="README.md">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="web.config" />
     <None Include="Default Settings.pubxml" />
     <Content Include="requirements.txt" />
