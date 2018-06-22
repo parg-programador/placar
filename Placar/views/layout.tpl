@@ -23,7 +23,8 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/home">Inicio</a></li>
-                    <li><a href="/participantes">Participantes</a></li>
+                    <li><a href="/ninguemliga">Ninguém Liga</a></li>
+					<li><a href="/derrota">Derrota</a></li>
                 </ul>
             </div>
         </div>
