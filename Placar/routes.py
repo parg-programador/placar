@@ -68,6 +68,7 @@ def home():
     """Renders the home page."""
     return dict(
         title='Placar',
+        dados=dados,
         ninguem_liga_dados=ninguem_liga_dados,
         ninguem_liga_nomes=ninguem_liga_nomes,
         ninguem_liga_cores=ninguem_liga_cores,

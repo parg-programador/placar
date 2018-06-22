@@ -7,7 +7,7 @@ import os
 import sys
 
 # routes contains the HTTP handlers for our server and must be imported.
-import routes
+import routes, participantes
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static').replace('\\', '/')

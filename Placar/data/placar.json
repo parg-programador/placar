@@ -1,34 +1,34 @@
 {
     "derrota": [
         {
-            "cor": "#2020FF",
+            "cor": "#3399FF",
             "pontos": 0,
             "quem": "Pablo"
         },
         {
-            "cor": "#FF4040",
+            "cor": "#FFCCFF",
             "pontos": 0,
             "quem": "Anderson"
         },
         {
-            "cor": "#20FF20",
+            "cor": "#FF0000",
             "pontos": 0,
             "quem": "Gustavo"
         }
     ],
     "ninguem_liga": [
         {
-            "cor": "#2020FF",
+            "cor": "#3399FF",
             "pontos": 0,
             "quem": "Pablo"
         },
         {
-            "cor": "#FF4040",
+            "cor": "#FFCCFF",
             "pontos": 0,
             "quem": "Anderson"
         },
         {
-            "cor": "#20FF20",
+            "cor": "#FF0000",
             "pontos": 0,
             "quem": "Gustavo"
         }

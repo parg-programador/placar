@@ -30,6 +30,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
+    <Compile Include="participantes.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes.py" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\placar.json" />
+    <Content Include="views\participantes.tpl" />
     <Content Include="web.config" />
     <None Include="Default Settings.pubxml" />
     <Content Include="requirements.txt" />

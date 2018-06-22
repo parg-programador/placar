@@ -1,18 +1,58 @@
-% rebase('layout.tpl', title='Home Page', year=year)
+% rebase('layout.tpl', title=title, year=year)
 
 <div class="jumbotron">
     <h1>Placar</h1>
 </div>
 
 <div class="row">
-    <div class="col-md-6">
-        <h2 class="text-center">Momento Ninguém Liga</h2>
-        <canvas id="ninguem_liga"></canvas>
-    </div>
-    <div class="col-md-6">
-        <h2 class="text-center">Momento Derrota</h2>
-        <canvas id="derrota"></canvas>
-    </div>
+	<div class="col-md-6">
+	    <h2 class="text-center">Momento Ninguém Liga</h2>
+	    <canvas id="ninguem_liga"></canvas>
+
+		<h3>Resumo</h3>
+		<div class="table-responsive">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Quem</th>
+						<th>Pontos</th>
+					</tr>
+				</thead>
+				<tbody>
+					% for i in range(0, len(dados['ninguem_liga'])):
+					<tr>
+						<td>{{ dados['ninguem_liga'][i]['quem'] }}</td>
+						<td>{{ dados['ninguem_liga'][i]['pontos'] }}</td>
+					</tr>
+					%end
+				</tbody>
+			</table>
+		</div><!-- ./table-responsive -->
+	</div><!-- ./col-md-6 -->
+	<div class="col-md-6">
+	    <h2 class="text-center">Momento Derrota</h2>
+	    <canvas id="derrota"></canvas>
+
+		<h3>Resumo</h3>
+		<div class="table-responsive">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Quem</th>
+						<th>Pontos</th>
+					</tr>
+				</thead>
+				<tbody>
+					% for i in range(0, len(dados['derrota'])):
+					<tr>
+						<td>{{ dados['derrota'][i]['quem'] }}</td>
+						<td>{{ dados['derrota'][i]['pontos'] }}</td>
+					</tr>
+					%end
+				</tbody>
+			</table>
+		</div><!-- ./table-responsive -->
+	</div><!-- ./col-md-6 -->
 </div>
 
 <script>

@@ -25,6 +25,7 @@
                     <li><a href="/home">Inicio</a></li>
                     <li><a href="/ninguemliga">Ninguém Liga</a></li>
 					<li><a href="/derrota">Derrota</a></li>
+					<li><a href="/participantes">Participantes</a></li>
                 </ul>
             </div>
         </div>
