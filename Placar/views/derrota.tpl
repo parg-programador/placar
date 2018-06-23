@@ -1,7 +1,7 @@
 % rebase('layout.tpl', title=title, year=year)
 
 <div>
-	<button type="button" class="btn btn-warning pull-right" onclick="document.location = '/derrota/zerar';">Zerar</button>
+	<button type="button" class="btn btn-warning pull-right" onclick="window.zerarDerrota('/derrota/zerar');">Zerar</button>
 	<h2>{{ title }}</h2>
 </div>
 
@@ -14,3 +14,14 @@
 	</div><!-- ./col-md-4 -->
 % end
 </div><!-- ./row -->
+
+<script>
+	window.zerarDerrota = function(url) {
+		window.onConfirmModalYes = function() {
+			document.location = url;
+		};
+
+		$('#confirmModalText').text('Deseja realmente zerar a pontuação de derrota?');
+		$('#confirmModal').modal('show');
+	};
+</script>
