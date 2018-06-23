@@ -1,36 +1,46 @@
 {
     "derrota": [
         {
-            "cor": "#3399FF",
-            "pontos": 0,
-            "quem": "Pablo"
+            "cor": "#FFCCFF",
+            "pontos": 2,
+            "quem": "Anderson"
         },
         {
-            "cor": "#FFCCFF",
-            "pontos": 0,
-            "quem": "Anderson"
+            "cor": "#00bb00",
+            "pontos": 1,
+            "quem": "Eloisa"
         },
         {
             "cor": "#FF0000",
             "pontos": 0,
             "quem": "Gustavo"
+        },
+        {
+            "cor": "#3399ff",
+            "pontos": 0,
+            "quem": "Pablo"
         }
     ],
     "ninguem_liga": [
         {
-            "cor": "#3399FF",
-            "pontos": 0,
-            "quem": "Pablo"
-        },
-        {
             "cor": "#FFCCFF",
-            "pontos": 0,
+            "pontos": 2,
             "quem": "Anderson"
         },
         {
-            "cor": "#FF0000",
+            "cor": "#00bb00",
             "pontos": 0,
+            "quem": "Eloisa"
+        },
+        {
+            "cor": "#FF0000",
+            "pontos": 2,
             "quem": "Gustavo"
+        },
+        {
+            "cor": "#3399ff",
+            "pontos": 1,
+            "quem": "Pablo"
         }
     ]
 }

@@ -39,6 +39,24 @@
         </footer>
     </div>
 
+	<div id="confirmModal" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-sm" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-warning">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title">Você confirma?</h4>
+				</div>
+				<div class="modal-body">
+					<p id="confirmModalText">Deseja realmente executar está ação?</p>
+				</div>
+				<div class="modal-footer text-right">
+					<button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Não</button>
+					<button type="button" class="btn btn-primary btn-sm" onclick="window.onConfirmModalYes();">Sim</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
     <script src="/static/scripts/jquery-1.10.2.js"></script>
     <script src="/static/scripts/bootstrap.js"></script>
     <script src="/static/scripts/respond.js"></script>
@@ -49,6 +67,9 @@
 			if (window.pageInit !== undefined) {
 				window.pageInit();
 			}
+
+			// configura os tooltips
+			$('[data-toggle="tooltip"]').tooltip();
 		});
 	</script>
 

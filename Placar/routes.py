@@ -20,7 +20,7 @@ def home():
     derrota_cores = ''
 
     # obtem as informações do placar
-    with open('data' + os.sep + 'placar.json') as read_file:
+    with open('data' + os.sep + 'placar.json', 'r') as read_file:
         dados = json.load(read_file)
 
     # verifica os dados
@@ -85,7 +85,7 @@ def ninguemliga():
     dados = None
 
     # obtem as informações do placar
-    with open('data' + os.sep + 'placar.json') as read_file:
+    with open('data' + os.sep + 'placar.json', 'r') as read_file:
         dados = json.load(read_file)
 
     """Renders the contact page."""
@@ -147,7 +147,7 @@ def derrota():
     dados = None
 
     # obtem as informações do placar
-    with open('data' + os.sep + 'placar.json') as read_file:
+    with open('data' + os.sep + 'placar.json', 'r') as read_file:
         dados = json.load(read_file)
 
     """Renders the contact page."""
