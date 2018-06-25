@@ -22,7 +22,7 @@
 					% for i in range(0, len(dados['ninguem_liga'])):
 					<tr>
 						<td>{{ dados['ninguem_liga'][i]['quem'] }}</td>
-						<td>{{ dados['ninguem_liga'][i]['pontos'] }}</td>
+						<td class="text-right">{{ dados['ninguem_liga'][i]['pontos'] }}</td>
 					</tr>
 					%end
 				</tbody>
@@ -46,7 +46,7 @@
 					% for i in range(0, len(dados['derrota'])):
 					<tr>
 						<td>{{ dados['derrota'][i]['quem'] }}</td>
-						<td>{{ dados['derrota'][i]['pontos'] }}</td>
+						<td class="text-right">{{ dados['derrota'][i]['pontos'] }}</td>
 					</tr>
 					%end
 				</tbody>

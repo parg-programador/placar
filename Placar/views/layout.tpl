@@ -57,6 +57,10 @@
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
 
+	<div class="ajax">
+		<h1>Aguarde</h1>
+	</div>
+
     <script src="/static/scripts/jquery-1.10.2.js"></script>
     <script src="/static/scripts/bootstrap.js"></script>
     <script src="/static/scripts/respond.js"></script>
@@ -70,6 +74,14 @@
 
 			// configura os tooltips
 			$('[data-toggle="tooltip"]').tooltip();
+
+			// oculta a mensagem de aguarde
+			$('div.ajax').hide();
+		});
+
+		$(window).on('beforeunload', function() {
+			// mostra a mensagem de aguarde
+			$('div.ajax').show();
 		});
 	</script>
 
